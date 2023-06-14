@@ -1,0 +1,49 @@
+    * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    div{
+        margin: 0;
+    }
+    
+    /* class name for responsive full width items*/
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones */
+        .full-width-mob {
+            width: 100%;
+        }
+        .some-full-width{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    @media only screen and (max-width:768px) {
+      /* For Tablets Only */
+      .full-width-tab {
+          width: 50%;
+      }
+      
+  }
+  /* Link for products description */
+  .description{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: small; 
+  }
+     /* Customize the scrollbar */
+     ::-webkit-scrollbar {
+        width: 8px;
+      }
+  
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: white;
+        border-radius: 10px;
+      }
+  
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 10px;
+      }
+    
