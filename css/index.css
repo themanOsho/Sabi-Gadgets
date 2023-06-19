@@ -5,24 +5,61 @@
     div{
         margin: 0;
     }
-    
+    /* Set text decoration for all links to none*/
+    a{
+      text-decoration: none;
+    }
     /* class name for responsive full width items*/
-    @media only screen and (max-width: 620px) {
+    @media only screen and (max-width: 992px) {
         /* For mobile phones */
-        .full-width-mob {
-            width: 100%;
+        .width-mobile {
+            width: 80%;
+            margin: auto;
+            margin-top: 10%;
+            font-size: small;
         }
         .some-full-width{
             width: 100%;
             text-align: center;
         }
     }
+    @media only screen and (min-width: 992px) {
+      /* For Tablets Only */
+      .width-comp {
+          width: 60%;
+          margin: auto;
+          margin-top: 4%;
+      }
+      
+  }
     @media only screen and (max-width: 992px) {
       /* For Tablets Only */
       .full-width-tab {
-          width: 100%;
+          width: 50%;
       }
       
+  }
+  @media only screen and (max-width: 992px){
+    /* Display prod cards on landscape */
+    #landscape-parent{
+      width: 100%;
+    }
+    #landscape{
+      width: 50%;
+    }
+    #landscape img{
+      width: 50%;
+    }
+    #landscape h6{
+      font-size: 8px;
+    }
+    #landscape h4{
+      font-size: 14px;
+    }
+    #landscape-btn{
+      font-size: 8px;
+      width: 50%;
+    }
   }
   /* Link for products description */
   .description{
@@ -37,6 +74,9 @@
   /* Link for product address */
   #address{
     text-decoration: none;
+  }
+  #address:hover{
+    text-decoration: overline;
   }
      /* Customize the scrollbar */
      ::-webkit-scrollbar {
