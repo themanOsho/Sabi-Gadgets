@@ -129,75 +129,51 @@
                 style="width: fit-content;"><b>Sign In</b></a>
         </div>
     </header>
-    <main class="w3-padding-large" style="margin-top: 15%;">
+    <main class="item w3-padding-large" style="margin-top: 10%;">
         <h5 class="w3-center"><b>Shop All Products</b></h5>
-        <div class="w3-center w3-padding"><input type="search" class="w3-input w3-padding w3-round-xxlarge"
+        <div class="w3-center w3-padding"><input type="search" oninput="w3.filterHTML('#id01', '.item', this.value)" class="w3-input w3-padding w3-round-xxlarge"
                 placeholder="Search all products"></div>
         <!-- Products Catelogue -->
-        <div id="Product Box" class="w3-container w3-margin-top">
+        <div id="Product Box" class="item w3-container w3-margin-top">
             <h4 class="w3-margin">Shop <span class="w3-text-khaki"><b>Brands</b></span></h4>
             <div class="w3-padding-large" style="width: 90%; margin: auto;">
                 <a href="#" class="w3-small"><b>Brands</b></a> / <a href="apple.html" id="address"
                     class="w3-text-gray w3-hover-text-black w3-small"><b>Apple</b></a>
             </div>
-            <div class="w3-row-padding">
+            <div id="id01" class="w3-row-padding">
                 <!-- Apple Catelogue -->
                 <!--Product Box-->
-                <div class="w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
                     <a href="apple.html"><img class="w3-margin" src="images/iphone14-png.jpg" alt="iphone14-png"></a>
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small"><b>Apple iPhone 14 256GB</b><br><span class="w3-large"
                                 style="font-weight: 500;"><b>$ 820</b></span></h6>
                         <a class="description" href="#">Description</a>
                     </div>
-                    <div class="w3-bar w3-center w3-margin">
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Buy
-                            Now
-                        </button>
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Add
-                            to
+                    <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
                             Cart</button>
-                    </div>
                 </div>
-                <div class="w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
                     <img class="w3-margin" src="images/iphone14plus.jpg" alt="iphone14-png">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Apple iPhone 14 Plus 128GB<br><span class="w3-large"
                                 style="font-weight: 500;"><b>$ 724</b></span></h6>
                         <a class="description" href="#">Description</a>
                     </div>
-                    <div class="w3-bar w3-center w3-margin">
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Buy
-                            Now
-                        </button>
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Add
-                            to
-                            Cart</button>
-                    </div>
+                    <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                        Cart</button>
                 </div>
-                <div class="w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
                     <img class="w3-margin" src="images/iphone14pro.jpg" alt="iphone14pro">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Apple iPhone 14 Pro Max 256GB<br><span class="w3-large"
                                 style="font-weight: 500;"><b>$ 1,137</b></span></h6>
                         <a class="description" href="#">Description</a>
                     </div>
-                    <div class="w3-bar w3-center w3-margin">
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Buy
-                            Now
-                        </button>
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Add
-                            to
-                            Cart</button>
-                    </div>
+                    <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                        Cart</button>
                 </div>
-                <div class="w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-round-xxlarge">
+                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-round-xxlarge">
                     <h3 class="w3-margin w3-text-red"><b><span class="w3-text-khaki">Ap</span>ple</b></h3>
                     <img class="w3-margin" src="images/apple-brand.jpeg" alt="apple logo" style="width: 50%;"><br>
                     <h4 class="w3-margin">Check <a href="apple.html" id="address" class="w3-text-khaki"><b>Products</b>
@@ -212,66 +188,42 @@
                 <a href="#" class="w3-small"><b>Brands</b></a> / <a href="samsung.html" id="address"
                     class="w3-text-gray w3-hover-text-black w3-small"><b>Samsung</b></a>
             </div>
-            <div class="w3-row-padding">
+            <div id="id01" class="w3-row-padding">
                 <!--Product Box-->
-                <div class="w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
                     <img class="w3-margin-top" src="images/SAMSUNG Galaxy S23_Ultra_.jpeg" alt="samsung_galaxy_s23_ultra_256GB" width="65%">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Samsung Galaxy S23 Ultra 256GB<br><span class="w3-large"
                                 style="font-weight: 500;"><b>$ 999</b></span></h6>
                         <a class="description" href="#">Description</a>
                     </div>
-                    <div class="w3-bar w3-center w3-margin">
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Buy
-                            Now
-                        </button>
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Add
-                            to
-                            Cart</button>
-                    </div>
+                    <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                        Cart</button>
                 </div>
-                <div class="w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
                     <img class="w3-margin" src="images/Samsung Galaxy S21 5G, US Version, 128GB.webp" alt="Samsung Galaxy S21 5G" width="60%">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Samsung Galaxy S21 5G 128GB<br><span class="w3-large"
                                 style="font-weight: 500;"><b>$ 238</b></span></h6>
                         <a class="description" href="#">Description</a>
                     </div>
-                    <div class="w3-bar w3-center w3-margin">
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Buy
-                            Now
-                        </button>
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Add
-                            to
-                            Cart</button>
-                    </div>
+                    <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                        Cart</button>
                 </div>
-                <div class="w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
-                    <img class="w3-margin-top" src="images/SAMSUNG Galaxy A53 5G.webp" alt="SAMSUNG Galaxy A53" width="62%">
+                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                    <img class="w3-margin-top" src="images/SAMSUNG Galaxy A53 5G.webp" alt="SAMSUNG Galaxy A53" width="63%">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Samsung Galaxy A53 5G<br><span class="w3-large"
                                 style="font-weight: 500;"><b>$ 443</b></span></h6>
                         <a class="description" href="#">Description</a>
                     </div>
-                    <div class="w3-bar w3-center w3-margin">
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Buy
-                            Now
-                        </button>
-                        <button
-                            class="w3-btn w3-mobile w3-bar-item w3-small w3-center w3-margin-bottom w3-teal w3-text-white w3-round-xxlarge">Add
-                            to
-                            Cart</button>
-                    </div>
+                    <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                        Cart</button>
                 </div>
-                <div class="w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-round-xxlarge">
+                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-round-xxlarge">
                     <h3 class="w3-margin w3-text-khaki"><b>Sam<span class="w3-text-red">sung</span></b></h3>
                     <img class="w3-margin" src="images/samsung brand.jpeg" alt="apple logo" style="width: 75%;"><br>
-                    <h4 class="w3-margin">Check <a href="apple.html" id="address" class="w3-text-khaki"><b>Products</b>
+                    <h4 class="w3-margin">Check <a href="#" id="address" class="w3-text-khaki"><b>Products</b>
                             <i class="fa-brands fa-apple"></i></a></h4>
                 </div>
             </div>
@@ -284,31 +236,25 @@
                 <a href="#" class="w3-small"><b>Categories</b></a> / <a href="#" id="address"
                     class="w3-text-gray w3-hover-text-black w3-small"><b>Computers</b></a>
             </div>
-            <div class="w3-row-padding">
+            <div id="id01" class="w3-row-padding">
                 <!--Product Box-->
-                <div class="w3-half w3-bar w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge" style="height: 200px;">
+                <div class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
                     <div class="w3-row">
                         <div id="landscape" class="w3-half">
                             <img class="w3-margin" src="images/HP_2022_New_15_Laptop_.png" alt="HP 2022 New 15 Laptop" width="100%">
                         </div>
                         <div id="landscape" class="w3-half w3-bar-block w3-left-align">
                             <div class="w3-bar-item">
-                                <h6 class="w3-left-align">Apple iPhone 14 256GB</h6>
+                                <h6 class="w3-left-align">HP 2022 New 15 Laptop</h6>
                                 <h4><b>$ 876</b></h4>
                                 <a class="description" href="#">Description</a>
                             </div>
-                            <div class="w3-bar-item w3-hide-small w3-hide-medium">
-                                <button class="w3-btn w3-small w3-teal w3-text-white w3-round-xxlarge">Buy
-                                    Now
-                                </button>
-                                <button class="w3-btn w3-small w3-teal w3-text-white w3-round-xxlarge">Add
-                                    to
-                                    Cart</button>
-                            </div>
+                            <button class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="w3-half w3-bar w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
                     <div class="w3-row">
                         <div id="landscape" class="w3-half">
                             <img class="w3-margin" src="images/Apple 2020 MacBook Air Laptop M1 Chip_.png" alt="apple-macbook" width="90%">
@@ -319,14 +265,8 @@
                                 <h4><b>$ 949</b></h4>
                                 <a class="description" href="#">Description</a>
                             </div>
-                            <div class="w3-bar-item w3-hide-small w3-hide-medium">
-                                <button class="w3-btn w3-small w3-teal w3-text-white w3-round-xxlarge">Buy
-                                    Now
-                                </button>
-                                <button class="w3-btn w3-small w3-teal w3-text-white w3-round-xxlarge">Add
-                                    to
-                                    Cart</button>
-                            </div>
+                            <button class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
@@ -339,12 +279,12 @@
                 <a href="#" class="w3-small"><b>Categories</b></a> / <a href="#" id="address"
                     class="w3-text-gray w3-hover-text-black w3-small"><b>Electronics</b></a>
             </div>
-            <div class="w3-row-padding">
+            <div id="id01" class="w3-row-padding">
                 <!--Product Box-->
-                <div class="w3-half w3-bar w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
                     <div class="w3-row">
                         <div id="landscape" class="w3-half">
-                            <img class="w3-margin" src="images/LG 43 inches TV.jpg" alt="iphone14-png" width="100%">
+                            <img class="w3-margin" src="images/LG 43 inches TV.jpg" alt="LG 43 inches TV" width="100%">
                         </div>
                         <div id="landscape" class="w3-half w3-bar-block w3-left-align">
                             <div class="w3-bar-item">
@@ -352,18 +292,12 @@
                                 <h4><b>$ 876</b></h4>
                                 <a class="description" href="#">Description</a>
                             </div>
-                            <div class="w3-bar-item w3-hide-small w3-hide-medium">
-                                <button class="w3-btn w3-small w3-teal w3-text-white w3-round-xxlarge">Buy
-                                    Now
-                                </button>
-                                <button class="w3-btn w3-small w3-teal w3-text-white w3-round-xxlarge">Add
-                                    to
-                                    Cart</button>
-                            </div>
+                            <button class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="w3-half w3-bar w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
                     <div class="w3-row">
                         <div id="landscape" class="w3-half">
                             <img class="w3-margin" src="images/Hisense 1.5HP Inverter Split Unit Air Conditioner.jpg" alt="Hisense Air Conditioner" width="75%">
@@ -374,14 +308,8 @@
                                 <h4><b>$ 315</b></h4>
                                 <a class="description" href="#">Description</a>
                             </div>
-                            <div class="w3-bar-item w3-hide-small w3-hide-medium">
-                                <button class="w3-btn w3-small w3-teal w3-text-white w3-round-xxlarge">Buy
-                                    Now
-                                </button>
-                                <button class="w3-btn w3-small w3-teal w3-text-white w3-round-xxlarge">Add
-                                    to
-                                    Cart</button>
-                            </div>
+                            <button class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                                Cart</button>
                         </div>
                     </div>
                 </div>
@@ -390,7 +318,7 @@
     </main>
     <footer class="w3-container w3-teal w3-padding">
         <div class="w3-row-padding">
-            <div class="w3-quarter w3-mobile">
+            <div class="w3-quarter full-width w3-mobile">
                 <h2 class="w3-margin" style="font-weight: 900;">Sabi Store <span class="w3-text-khaki">\</span><span
                         class="w3-text-red">|</span>-</h2>
                 <p class="w3-tiny w3-padding"><i>Nigerian's No.1 Online Cheap Prices Gadgets Store</i></p>
@@ -399,18 +327,18 @@
                     <p><i>Mail: <b>help@sabigadgets.com</b></i></p>
                 </div>
             </div>
-            <div class="w3-quarter w3-mobile w3-bar-block w3-padding-large">
+            <div class="w3-quarter full-width w3-mobile w3-bar-block w3-padding-large">
                 <h4><b>Shop</b></h4>
                 <a href="index.html" id="address" class="w3-bar-item">All Products</a>
                 <a href="#" id="address" class="w3-bar-item">Brands</a>
                 <a href="#" id="address" class="w3-bar-item">Cart</a>
             </div>
-            <div class="w3-quarter w3-mobile w3-bar-block w3-padding-large">
+            <div class="w3-quarter full-width w3-mobile w3-bar-block w3-padding-large">
                 <h4><b>Categories</b></h4>
                 <a href="#" id="address" class="w3-bar-item">Computers</a>
                 <a href="#" id="address" class="w3-bar-item">Electronics</a>
             </div>
-            <div class="w3-quarter w3-mobile w3-bar-block w3-padding-large">
+            <div class="w3-quarter full-width w3-mobile w3-bar-block w3-padding-large">
                 <h4><b>Help Desk</b></h4>
                 <a href="#" id="address" class="w3-bar-item">Privacy</a>
                 <a href="#" id="address" class="w3-bar-item">Refund Policy</a>
