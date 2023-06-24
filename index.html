@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabi Gadgets | Nigerian's No.1 Online Cheap Prices Gadgets Store</title>
     <link rel="stylesheet" href="css/4/w3.css">
+    <link rel="stylesheet" href="css/4/w3pro.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/w3.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -71,13 +72,31 @@
                     </div>
                 </div>
                 <div class="w3-dropdown-hover w3-margin">
-                    <button class="w3-button w3-hover-none w3-hover-text-gray"><b>Help Desk</b></button>
+                    <button class="w3-button w3-hover-none"><b>Help Desk</b></button>
                     <div class="w3-dropdown-content w3-bar-block w3-small w3-animate-zoom">
-                        <a href="#" class="w3-bar-item w3-button w3-hover-none">Privacy</a>
-                        <a href="#" class="w3-bar-item w3-button w3-hover-none">Refund Policy</a>
+                        <a href="#" class="w3-bar-item w3-button">Privacy</a>
+                        <a href="#" class="w3-bar-item w3-button">Refund Policy</a>
                     </div>
                 </div>
-                <button class="w3-bar-item w3-margin w3-button w3-hover-none"><b>Cart</b></button>
+                <!-- Trigger/Open Cart -->
+                <button onclick="document.getElementById('id01').style.display='block'"
+                    class="w3-bar-item w3-margin w3-button w3-hover-none"><b>Cart</b></button>
+                <!-- The Cart -->
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content" style="width: 50%; position: fixed; right: 0; top: 70px;">
+                        <header class="w3-container w3-teal">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                class="w3-button w3-right w3-margin-top w3-hover-none"><b>&times;</b></span>
+                            <h2 class="w3-left" style="font-family: 'Open Sans';">Shopping Cart</h2>
+                        </header>
+                        <div class="w3-container w3-left-align" style="height: 300px;">
+                            <p class="w3-text-gray">You've not added any product.</p>
+                        </div>
+                        <footer class="w3-container w3-teal">
+                            <button class="w3-button w3-hover-none w3-large w3-padding"><b>Check Out</b></button>
+                        </footer>
+                    </div>
+                </div>
             </div>
             <div class="w3-third w3-right-align" style="width: 10%;">
                 <a href="sign-in.html"
@@ -114,7 +133,6 @@
             <div id="According2" class="w3-hide w3-white w3-padding w3-card w3-animate-opacity">
                 <a href="#" id="address" class="w3-bar-item w3-hover-none w3-button">Computers</a>
                 <a href="#" id="address" class="w3-bar-item w3-hover-none w3-button">Electronics</a>
-                <a href="#" id="address" class="w3-bar-item w3-hover-none w3-button">Home Appliances</a>
             </div>
             <button class="w3-button w3-block w3-left-align" onclick="myFunction('According3')">
                 <b>Help Desk</b> <i class="fa fa-caret-down"></i>
@@ -123,16 +141,33 @@
                 <a href="#" id="address" class="w3-bar-item w3-hover-none w3-button">Privacy</a>
                 <a href="#" id="address" class="w3-bar-item w3-hover-none w3-button">Refund Policy</a>
             </div>
-            <a href="#" class="w3-bar-item w3-button">Cart</a>
+            <a href="#" onclick="document.getElementById('id02').style.display='block'"
+                class="w3-bar-item w3-button">Cart</a>
+            <!-- The Cart -->
+            <div id="id02" class="w3-modal">
+                <div class="w3-modal-content" style="width: 50%; position: fixed; right: 0; top: 70px;">
+                    <header class="w3-container w3-teal">
+                        <span onclick="document.getElementById('id02').style.display='none'"
+                            class="w3-button w3-right w3-margin-top w3-hover-none"><b>&times;</b></span>
+                        <h2 class="w3-left" style="font-family: 'Open Sans';">Shopping Cart</h2>
+                    </header>
+                    <div class="w3-container w3-left-align" style="height: 300px;">
+                        <p class="w3-text-gray">You've not added any product.</p>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                        <button class="w3-button w3-hover-none w3-large w3-padding"><b>Check Out</b></button>
+                    </footer>
+                </div>
+            </div>
             <a href="sign-in.html"
-                class="w3-bar-item w3-white w3-bottom w3-hover-white w3-margin w3-hover-text-khaki w3-text-teal w3-round-xlarge w3-button w3-hover-none"
-                style="width: fit-content;"><b>Sign In</b></a>
+                class="w3-bar-item w3-white w3-hover-white w3-hover-text-khaki w3-text-teal w3-round-xlarge w3-button w3-hover-none"
+                style="width: fit-content; margin-top: 50%; margin-left: 5%;"><b>Sign In</b></a>
         </div>
-    </header>
-    <main class="item w3-padding-large" style="margin-top: 15%;">
+    </header><br><br><br>
+    <main class="item w3-padding-large">
         <h5 class="w3-center"><b>Shop All Products</b></h5>
-        <div class="w3-center w3-padding"><input type="search" oninput="w3.filterHTML('#id01', '.item', this.value)" class="w3-input w3-padding w3-round-xxlarge"
-                placeholder="Search all products"></div>
+        <div class="w3-center w3-padding"><input type="search" oninput="w3.filterHTML('#id01', '.item', this.value)"
+                class="w3-input w3-padding w3-round-xxlarge" placeholder="Search all products"></div>
         <!-- Products Catelogue -->
         <div id="Product Box" class="item w3-container w3-margin-top">
             <h4 class="w3-margin">Shop <span class="w3-text-khaki"><b>Brands</b></span></h4>
@@ -143,7 +178,8 @@
             <div id="id01" class="w3-row-padding">
                 <!-- Apple Catelogue -->
                 <!--Product Box-->
-                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div
+                    class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
                     <a href="apple.html"><img class="w3-margin" src="images/iphone14-png.jpg" alt="iphone14-png"></a>
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small"><b>Apple iPhone 14 256GB</b><br><span class="w3-large"
@@ -151,9 +187,10 @@
                         <a class="description" href="#">Description</a>
                     </div>
                     <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
-                            Cart</button>
+                        Cart</button>
                 </div>
-                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div
+                    class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
                     <img class="w3-margin" src="images/iphone14plus.jpg" alt="iphone14-png">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Apple iPhone 14 Plus 128GB<br><span class="w3-large"
@@ -163,7 +200,8 @@
                     <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
                         Cart</button>
                 </div>
-                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                <div
+                    class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
                     <img class="w3-margin" src="images/iphone14pro.jpg" alt="iphone14pro">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Apple iPhone 14 Pro Max 256GB<br><span class="w3-large"
@@ -190,8 +228,10 @@
             </div>
             <div id="id01" class="w3-row-padding">
                 <!--Product Box-->
-                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
-                    <img class="w3-margin-top" src="images/SAMSUNG Galaxy S23_Ultra_.jpeg" alt="samsung_galaxy_s23_ultra_256GB" width="65%">
+                <div
+                    class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                    <img class="w3-margin-top" src="images/SAMSUNG Galaxy S23_Ultra_.jpeg"
+                        alt="samsung_galaxy_s23_ultra_256GB" width="65%">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Samsung Galaxy S23 Ultra 256GB<br><span class="w3-large"
                                 style="font-weight: 500;"><b>$ 999</b></span></h6>
@@ -200,8 +240,10 @@
                     <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
                         Cart</button>
                 </div>
-                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
-                    <img class="w3-margin" src="images/Samsung Galaxy S21 5G, US Version, 128GB.webp" alt="Samsung Galaxy S21 5G" width="60%">
+                <div
+                    class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                    <img class="w3-margin" src="images/Samsung Galaxy S21 5G, US Version, 128GB.webp"
+                        alt="Samsung Galaxy S21 5G" width="60%">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Samsung Galaxy S21 5G 128GB<br><span class="w3-large"
                                 style="font-weight: 500;"><b>$ 238</b></span></h6>
@@ -210,8 +252,10 @@
                     <button class="w3-btn w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
                         Cart</button>
                 </div>
-                <div class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
-                    <img class="w3-margin-top" src="images/SAMSUNG Galaxy A53 5G.webp" alt="SAMSUNG Galaxy A53" width="63%">
+                <div
+                    class="item w3-quarter w3-mobile w3-margin-top full-width-tab w3-center w3-card-4 w3-round-xxlarge">
+                    <img class="w3-margin-top" src="images/SAMSUNG Galaxy A53 5G.webp" alt="SAMSUNG Galaxy A53"
+                        width="63%">
                     <div class="w3-container w3-left-align">
                         <h6 class="w3-left-align w3-small">Samsung Galaxy A53 5G<br><span class="w3-large"
                                 style="font-weight: 500;"><b>$ 443</b></span></h6>
@@ -224,7 +268,7 @@
                     <h3 class="w3-margin w3-text-khaki"><b>Sam<span class="w3-text-red">sung</span></b></h3>
                     <img class="w3-margin" src="images/samsung brand.jpeg" alt="apple logo" style="width: 75%;"><br>
                     <h4 class="w3-margin">Check <a href="#" id="address" class="w3-text-khaki"><b>Products</b>
-                            <i class="fa-brands fa-apple"></i></a></h4>
+                        </a></h4>
                 </div>
             </div>
         </div>
@@ -238,10 +282,12 @@
             </div>
             <div id="id01" class="w3-row-padding">
                 <!--Product Box-->
-                <div class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
+                <div
+                    class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
                     <div class="w3-row">
                         <div id="landscape" class="w3-half">
-                            <img class="w3-margin" src="images/HP_2022_New_15_Laptop_.png" alt="HP 2022 New 15 Laptop" width="100%">
+                            <img class="w3-margin" src="images/HP_2022_New_15_Laptop_.png" alt="HP 2022 New 15 Laptop"
+                                width="100%">
                         </div>
                         <div id="landscape" class="w3-half w3-bar-block w3-left-align">
                             <div class="w3-bar-item">
@@ -249,15 +295,19 @@
                                 <h4><b>$ 876</b></h4>
                                 <a class="description" href="#">Description</a>
                             </div>
-                            <button class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                            <button
+                                class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add
+                                to
                                 Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
+                <div
+                    class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
                     <div class="w3-row">
                         <div id="landscape" class="w3-half">
-                            <img class="w3-margin" src="images/Apple 2020 MacBook Air Laptop M1 Chip_.png" alt="apple-macbook" width="90%">
+                            <img class="w3-margin" src="images/Apple 2020 MacBook Air Laptop M1 Chip_.png"
+                                alt="apple-macbook" width="90%">
                         </div>
                         <div id="landscape" class="w3-half w3-bar-block w3-left-align">
                             <div class="w3-bar-item">
@@ -265,7 +315,9 @@
                                 <h4><b>$ 949</b></h4>
                                 <a class="description" href="#">Description</a>
                             </div>
-                            <button class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                            <button
+                                class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add
+                                to
                                 Cart</button>
                         </div>
                     </div>
@@ -281,7 +333,8 @@
             </div>
             <div id="id01" class="w3-row-padding">
                 <!--Product Box-->
-                <div class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
+                <div
+                    class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
                     <div class="w3-row">
                         <div id="landscape" class="w3-half">
                             <img class="w3-margin" src="images/LG 43 inches TV.jpg" alt="LG 43 inches TV" width="100%">
@@ -292,15 +345,19 @@
                                 <h4><b>$ 876</b></h4>
                                 <a class="description" href="#">Description</a>
                             </div>
-                            <button class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                            <button
+                                class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add
+                                to
                                 Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
+                <div
+                    class="item customheight w3-half w3-bar w3-mobile w3-margin-top full-width w3-center w3-card-4 w3-round-xxlarge">
                     <div class="w3-row">
                         <div id="landscape" class="w3-half">
-                            <img class="w3-margin" src="images/Hisense 1.5HP Inverter Split Unit Air Conditioner.jpg" alt="Hisense Air Conditioner" width="75%">
+                            <img class="w3-margin" src="images/Hisense 1.5HP Inverter Split Unit Air Conditioner.jpg"
+                                alt="Hisense Air Conditioner" width="75%">
                         </div>
                         <div id="landscape" class="w3-half w3-bar-block w3-left-align">
                             <div class="w3-bar-item">
@@ -308,7 +365,9 @@
                                 <h4><b>$ 315</b></h4>
                                 <a class="description" href="#">Description</a>
                             </div>
-                            <button class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add to
+                            <button
+                                class="w3-btn w3-hide-small w3-center w3-margin w3-teal w3-text-white w3-round-xxlarge">Add
+                                to
                                 Cart</button>
                         </div>
                     </div>
