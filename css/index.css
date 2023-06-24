@@ -13,7 +13,7 @@
     @media only screen and (max-width: 992px) {
         /* For mobile phones */
         .width-mobile {
-            width: 80%;
+            width: 90%;
             margin: auto;
             margin-top: 10%;
             font-size: small;
@@ -30,6 +30,9 @@
           margin: auto;
           margin-top: 4%;
       }
+      .customheight{
+        height: 220px;
+      }
       
   }
     @media only screen and (max-width: 992px) {
@@ -37,7 +40,9 @@
       .full-width-tab {
           width: 50%;
       }
-      
+      .full-width{
+        width: 100%;
+      }
   }
   @media only screen and (max-width: 992px){
     /* Display prod cards on landscape */
@@ -48,7 +53,8 @@
       width: 50%;
     }
     #landscape img{
-      width: 50%;
+      width: 80%;
+      margin: 10% 20%;
     }
     #landscape h6{
       font-size: 8px;
