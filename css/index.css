@@ -1,103 +1,146 @@
     * {
-        box-sizing: border-box;
-        scroll-behavior: smooth;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
-    div{
-        margin: 0;
+
+    div {
+      margin: 0;
     }
+
     /* Set text decoration for all links to none*/
-    a{
+    a {
       text-decoration: none;
     }
+
     /* class name for responsive full width items*/
     @media only screen and (max-width: 992px) {
-        /* For mobile phones */
-        .width-mobile {
-            width: 90%;
-            margin: auto;
-            margin-top: 10%;
-            font-size: small;
-        }
-        .some-full-width{
-            width: 100%;
-            text-align: center;
-        }
-    }
-    @media only screen and (min-width: 992px) {
-      /* For Tablets Only */
-      .width-comp {
-          width: 60%;
-          margin: auto;
-          margin-top: 4%;
+
+      /* For mobile phones */
+      .width-mobile {
+        width: 90%;
+        margin: auto;
+        margin-top: 10%;
+        font-size: small;
       }
-      .customheight{
+
+      .some-full-width {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+
+      /* For Desktops Only */
+      .width-comp {
+        width: 60%;
+        margin: auto;
+        margin-top: 4%;
+      }
+
+      .customheight {
         height: 220px;
       }
-      
-  }
+
+    }
+
     @media only screen and (max-width: 992px) {
+
       /* For Tablets Only */
       .full-width-tab {
-          width: 50%;
+        width: 50%;
       }
-      .full-width{
+
+      .full-width {
         width: 100%;
       }
-  }
-  @media only screen and (max-width: 992px){
-    /* Display prod cards on landscape */
-    #landscape-parent{
-      width: 100%;
     }
-    #landscape{
-      width: 50%;
-    }
-    #landscape img{
-      width: 80%;
-      margin: 10% 20%;
-    }
-    #landscape h6{
-      font-size: 8px;
-    }
-    #landscape h4{
-      font-size: 14px;
-    }
-    #landscape-btn{
-      font-size: 8px;
-      width: 50%;
-    }
-  }
-  /* Link for products description */
-  .description{
-    text-decoration: none;
-    font-weight: 600;
-    font-size: small;
-    color: gray;
-  }
-  .description:hover{
-    text-decoration: underline;
-  }
-  /* Link for product address */
-  #address{
-    text-decoration: none;
-  }
-  #address:hover{
-    text-decoration: overline;
-  }
-     /* Customize the scrollbar */
-     ::-webkit-scrollbar {
-        width: 8px;
+
+    @media only screen and (max-width: 992px) {
+
+      /* Display prod cards on landscape */
+      #landscape-parent {
+        width: 100%;
       }
-  
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: white;
-        border-radius: 10px;
+
+      #landscape {
+        width: 50%;
       }
-  
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: gray;
-        border-radius: 10px;
+
+      #landscape img {
+        width: 80%;
+        margin: 10% 20%;
       }
-    
+
+      #landscape h6 {
+        font-size: 8px;
+      }
+
+      #landscape h4 {
+        font-size: 14px;
+      }
+
+      #landscape-btn {
+        font-size: 8px;
+        width: 50%;
+      }
+    }
+
+    /* Link for products description */
+    .description {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: small;
+      color: gray;
+    }
+
+    .description:hover {
+      text-decoration: underline;
+    }
+
+    /* Link for product address */
+    #address {
+      text-decoration: none;
+    }
+
+    #address:hover {
+      text-decoration: overline;
+    }
+
+    /* Customize the scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: white;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: gray;
+      border-radius: 10px;
+    }
+
+    /* Set custom style to input[type=text] on focus*/
+    input[type=text]:focus {
+      border: none;
+      outline: none;
+      color: teal;
+      font-weight: 700;
+    }
+
+    /* Set custom style to input[type=email] on focus*/
+    input[type=email]:focus {
+      border: none;
+      outline: none;
+      color: teal;
+      font-weight: 700;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    input[type=checkbox]:after {
+      background-color: red;
+    }
